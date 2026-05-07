@@ -42,7 +42,7 @@ flowchart TD
     style E fill:#d9f9e6,stroke:#2fb367,stroke-width:4px,color:#23864d
 
     %% Link Styling
-    linkStyle default stroke:#ff9a40,stroke-width:2px
+    linkStyle default stroke:#cddc39,stroke-width:2px
 
   ```
 
