@@ -10,36 +10,40 @@
     <td>
 
   ```mermaid
-  flowchart LR
-      subgraph Welcome ["<b>WELCOME</b>"]
-          direction LR
-          A(["<b>SE Intern</b><br/>May'21"]) 
-          B(["<b>Software Engineer</b><br/>Oct'21"])
-      end
-  
-      subgraph Optimizely ["<b>OPTIMIZELY</b>"]
-          direction LR
-          C(["<b>Software Engineer I</b><br/>Jan'22"])
-          D(["<b>Software Engineer II</b><br/>Jan'23"])
-          E{{"<b>Senior SE</b><br/>Apr'26"}}
-      end
-  
-      %% Flow
-      A --> B --> C --> D --> E
-  
-      %% Styling Boxes
-      style Welcome fill:none,stroke:#0ea5e9,stroke-width:2px,stroke-dasharray: 5 5
-      style Optimizely fill:none,stroke:#a855f7,stroke-width:2px,stroke-dasharray: 5 5
-  
-      %% Styling Nodes (Light/Dark Mode optimized)
-      style A fill:#e0f2fe,stroke:#0ea5e9,stroke-width:2px,color:#0369a1
-      style B fill:#e0f2fe,stroke:#0ea5e9,stroke-width:2px,color:#0369a1
-      style C fill:#faf5ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
-      style D fill:#faf5ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
-      style E fill:#4338ca,stroke:#818cf8,stroke-width:3px,color:#fff
-  
-      %% Link Styling
-      linkStyle default stroke:#94a3b8,stroke-width:2px
+  %%{init: {"flowchart": {"padding": 20, "nodeSpacing": 40, "rankSpacing": 60}} }%%
+flowchart TD
+    subgraph Welcome ["<b>WELCOME</b>"]
+        direction LR
+        A(["<b>SE Intern</b><br/>May'21"]) 
+        B(["<b>Software Engineer</b><br/>Oct'21"])
+        A --> B
+    end
+
+    subgraph Optimizely ["<b>OPTIMIZELY</b>"]
+        direction LR
+        C(["<b>Software Engineer I</b><br/>Jan'22"])
+        D(["<b>Software Engineer II</b><br/>Jan'23"])
+        E{{"<b>Senior SE</b><br/>Apr'26"}}
+        C --> D --> E
+    end
+
+    %% Vertical Joint between subgraphs
+    Welcome --> Optimizely
+
+    %% Styling Boxes
+    style Welcome fill:none,stroke:#66e0ff,stroke-width:2px,stroke-dasharray: 5 5
+    style Optimizely fill:none,stroke:#a855f7,stroke-width:2px,stroke-dasharray: 5 5
+
+    %% Styling Nodes
+    style A fill:#ccf5ff,stroke:#33d6ff,stroke-width:2px,color:#005266
+    style B fill:#ccf5ff,stroke:#33d6ff,stroke-width:2px,color:#005266
+    style C fill:#e7d2ff,stroke:#861dff,stroke-width:3px,color:#360c66
+    style D fill:#e7d2ff,stroke:#861dff,stroke-width:3px,color:#360c66
+    style E fill:#d9f9e6,stroke:#2fb367,stroke-width:4px,color:#23864d
+
+    %% Link Styling
+    linkStyle default stroke:#ff9a40,stroke-width:2px
+
   ```
 
 </td>
