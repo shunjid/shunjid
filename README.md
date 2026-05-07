@@ -56,8 +56,8 @@ flowchart TD
 flowchart LR
     subgraph Education ["<b>ACADEMIC JOURNEY</b>"]
         direction LR
-        HS(["<b>A.K High School</b><br/>SSC"])
-        DCC(["<b>Dhaka City College</b><br/>HSC"])
+        HS(["<b>A.K High School</b><br/>S.S.C"])
+        DCC(["<b>Dhaka City College</b><br/>H.S.C"])
         DIU(["<b>Daffodil International University</b><br/>BSc in SWE"])
     end
 
@@ -65,15 +65,15 @@ flowchart LR
     HS ==> DCC ==> DIU
 
     %% High-Contrast Styling (Works for Light & Dark Mode)
-    style HS fill:#fff7ed,stroke:#f59e0b,stroke-width:2px,color:#9a3412
-    style DCC fill:#fefce8,stroke:#eab308,stroke-width:2px,color:#854d0e
-    style DIU fill:#f0fdf4,stroke:#22c55e,stroke-width:3px,color:#166534
+    style HS fill:#c8e6c9,stroke:#357a38,stroke-width:2px,color:#166534
+    style DCC fill:#ffcdd2,stroke:#b71c1c,stroke-width:2px,color:#854d0e
+    style DIU fill:#c8e6c9,stroke:#357a38,stroke-width:3px,color:#166534
 
     %% Container Styling
-    style Education fill:none,stroke:#94a3b8,stroke-width:2px,stroke-dasharray: 5 5
+    style Education fill:none,stroke:#c8e6c9,stroke-width:2px,stroke-dasharray: 5 5
 
     %% Link Styling
-    linkStyle default stroke:#cbd5e1,stroke-width:4px
+    linkStyle default stroke:#c8e6c9,stroke-width:4px
 ```
 
 </td>
